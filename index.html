@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <style>
+             body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;         /* Enables Flexbox */
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center;    /* Centers items horizontally */
+        justify-content: center; /* Centers items vertically */
+        min-height: 100vh;      /* Minimum height of 100% of the viewport height */
+        margin: 0;              /* Removes default margin */
+        }
+
+
+     
+        .text-box_1 {
+            display: block; /* Reinforces the block-level display */
+            background-color: rgb(103, 103, 103);
+            border: 1px solid rgb(100, 118, 255);
+            margin: 10px;
+            padding: 10px;
+            width: 1000px;
+            height: 100px;
+        }
+
+
+
+        .text-box {
+            display: block; /* Reinforces the block-level display */
+    background-color: rgb(27, 27, 27); /* Initially darker shade */
+    border: 1px solid rgb(100, 118, 255);
+    margin: 10px;
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+    transition: background-color 0.2s ease-in-out; /* Smooth transition for background color */
+
+        }
+
+        .text-box:hover {
+            background-color: rgb(103, 103, 103); /* Lighter color on hover */
+}
+
+
+        
+    #box2 a {
+        color: #fff; /* White text color for the link */
+        text-decoration: none; /* Removes underline */
+    }
+
+    #box2 a:hover {
+        text-decoration: underline; /* Adds underline on hover */
+    }
+
+
+
+    #background-square {
+        position: fixed; /* Or absolute, depending on your needs */
+        width: 600px; /* Adjust size as needed */
+        height: 600px; /* Adjust size as needed */
+        background-color: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Offset the square by half of its size to truly center it */
+        z-index: -1; /* Ensure it's in the background */
+        animation: rotateSquare 20s linear infinite; /* Apply the animation here */
+
+
+}
+@keyframes rotateSquare {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- The JavaScript will insert content here -->
+    <script src="Header.js"></script>
+</body>
+</html>
