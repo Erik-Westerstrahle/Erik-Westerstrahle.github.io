@@ -8,7 +8,7 @@ function displaymyCVWebsite() {
         <div id="box3" class="text-box"></div>
     `;
 
-    document.getElementById('box1').innerHTML = 'Greetings my name is E. I am an Computer Engineering student and 3D Artist';
+    document.getElementById('box1').innerHTML = 'Greetings my name is E. I am an Computer Engineering student and 3D Artist Testing testing';
 
     document.getElementById('box2').innerHTML = '<a href="https://www.artstation.com/iberit/albums/1052928" target="_blank">You can view my 3D art here</a>';
 
