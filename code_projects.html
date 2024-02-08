@@ -39,7 +39,26 @@
 }
 
 
+#background-square {
+        position: fixed; /* Or absolute, depending on your needs */
+        width: 600px; /* Adjust size as needed */
+        height: 600px; /* Adjust size as needed */
+        background-color: rgba(255, 255, 255, 0.1); /* White with 10% opacity */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Offset the square by half of its size to truly center it */
+        z-index: -1; /* Ensure it's in the background */
+        animation: rotateSquare 20s linear infinite; /* Apply the animation here */
+}
 
+@keyframes rotateSquare {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 
 .text-box {
             display: block; /* Reinforces the block-level display */
@@ -67,6 +86,8 @@
     #box2 a:hover {
         text-decoration: underline; /* Adds underline on hover */
     }
+
+    
 
     </style>
 </head>
